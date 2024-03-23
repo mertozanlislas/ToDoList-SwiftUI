@@ -14,6 +14,11 @@
 		1806FA472BA786B600DCD760 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FA462BA786B600DCD760 /* ToDoListTests.swift */; };
 		1806FA512BA786B600DCD760 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FA502BA786B600DCD760 /* ToDoListUITests.swift */; };
 		1806FA532BA786B600DCD760 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FA522BA786B600DCD760 /* ToDoListUITestsLaunchTests.swift */; };
+		1806FA612BA78D6600DCD760 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FA602BA78D6600DCD760 /* Note.swift */; };
+		1806FA632BA78DE600DCD760 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FA622BA78DE600DCD760 /* NoteManager.swift */; };
+		1806FA662BA79EF700DCD760 /* NoteAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FA652BA79EF700DCD760 /* NoteAddingView.swift */; };
+		183D33842BAA309F004FDDCA /* NoteEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D33832BAA309F004FDDCA /* NoteEditingView.swift */; };
+		183D33862BAA463E004FDDCA /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D33852BAA463E004FDDCA /* TextInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		1806FA4C2BA786B600DCD760 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1806FA502BA786B600DCD760 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		1806FA522BA786B600DCD760 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1806FA602BA78D6600DCD760 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		1806FA622BA78DE600DCD760 /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
+		1806FA652BA79EF700DCD760 /* NoteAddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAddingView.swift; sourceTree = "<group>"; };
+		183D33832BAA309F004FDDCA /* NoteEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditingView.swift; sourceTree = "<group>"; };
+		183D33852BAA463E004FDDCA /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,9 @@
 		1806FA342BA786B400DCD760 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				1806FA5F2BA78D2800DCD760 /* Models */,
 				1806FA352BA786B400DCD760 /* ToDoListApp.swift */,
-				1806FA372BA786B400DCD760 /* ContentView.swift */,
+				1806FA642BA79ED100DCD760 /* Views */,
 				1806FA392BA786B500DCD760 /* Assets.xcassets */,
 				1806FA3B2BA786B500DCD760 /* Preview Content */,
 			);
@@ -125,6 +136,26 @@
 				1806FA522BA786B600DCD760 /* ToDoListUITestsLaunchTests.swift */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		1806FA5F2BA78D2800DCD760 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1806FA602BA78D6600DCD760 /* Note.swift */,
+				1806FA622BA78DE600DCD760 /* NoteManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1806FA642BA79ED100DCD760 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1806FA372BA786B400DCD760 /* ContentView.swift */,
+				1806FA652BA79EF700DCD760 /* NoteAddingView.swift */,
+				183D33832BAA309F004FDDCA /* NoteEditingView.swift */,
+				183D33852BAA463E004FDDCA /* TextInput.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1806FA382BA786B400DCD760 /* ContentView.swift in Sources */,
+				183D33842BAA309F004FDDCA /* NoteEditingView.swift in Sources */,
+				1806FA662BA79EF700DCD760 /* NoteAddingView.swift in Sources */,
+				1806FA632BA78DE600DCD760 /* NoteManager.swift in Sources */,
 				1806FA362BA786B400DCD760 /* ToDoListApp.swift in Sources */,
+				1806FA612BA78D6600DCD760 /* Note.swift in Sources */,
+				183D33862BAA463E004FDDCA /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
