@@ -37,17 +37,13 @@
                                 }
                             }
                         }
-                        
                         Spacer()
-                            
                     }
                     
                     .padding()
                 }
             }
-            .onAppear(perform: {
-                print(noteManager.notes)
-            })
+
         }
     }
 

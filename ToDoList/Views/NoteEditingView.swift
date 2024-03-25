@@ -11,6 +11,7 @@ struct NoteEditingView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var title = ""
     @State var description = ""
+    @State var showingDeleteAlert = false
     let contentView : ContentView
     @State var note : Note
     var body: some View {
@@ -26,11 +27,16 @@ struct NoteEditingView: View {
                     }
                 }
                 .disabled(title.isEmpty)
-                Button("Delete"){
-                    contentView.noteManager.deleteNote(id: note.id)
-                    presentationMode.wrappedValue.dismiss()
+                Button("Delete",role: .destructive){
+                    showingDeleteAlert=true
                 }
-                .foregroundStyle(.red)
+                .alert("Are you sure to delete this note?", isPresented: $showingDeleteAlert, actions: {
+                    Button("Delete",role: .destructive){
+                        contentView.noteManager.deleteNote(id: note.id)
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                })
+                
                 .padding()
                 }
             }
